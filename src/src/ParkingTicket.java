@@ -30,6 +30,14 @@ public class ParkingTicket {
         this.parkingLocation = parkingLocation;
     }
 
+    public int getRate() {
+        return rate;
+    }
+
+    public LocalDateTime getEntryTime() {
+        return entryTime;
+    }
+
     public ParkingLocation getParkingLocation() {
         return parkingLocation;
     }

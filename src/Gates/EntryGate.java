@@ -4,6 +4,7 @@ import Gates.Gate;
 import Parking.ParkingFloor;
 import Parking.ParkingLocation;
 import Parking.ParkingSpace;
+import Users.GateAttendant;
 import Vehicles.*;
 import src.*;
 
@@ -21,6 +22,11 @@ public class EntryGate extends Gate {
         }
         return null;
     }
+
+    public EntryGate(int gateNum, GateAttendant gateAttendant) {
+        super(gateNum, gateAttendant);
+    }
+
     public void issueParkingTicket(Vehicle vehicle, List<ParkingFloor> parkingFloorList){
         ParkingLocation parkingLocation = getSpace(vehicle, parkingFloorList);
         if(parkingLocation != null)

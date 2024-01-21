@@ -14,4 +14,6 @@ public class ParkingLot {
     ArrayList<ExitGate> exitGates;
     List<ParkingFloor> parkingFloorList;
 
+
+
 }
